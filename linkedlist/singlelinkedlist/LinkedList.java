@@ -17,7 +17,7 @@ class Node {
 
 public class LinkedList {
 
-    public static Node convertArr2LL(int[] arr) {
+    public Node convertArr2LL(int[] arr) {
         Node head = new Node(arr[0]);
         Node mover = head;
 
@@ -30,7 +30,7 @@ public class LinkedList {
         return head;
     }
 
-    public static void printLL(Node head) {
+    public void printLL(Node head) {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
@@ -40,7 +40,7 @@ public class LinkedList {
         System.out.println();
     }
 
-    public static int lengthOfLL(Node head) {
+    public int lengthOfLL(Node head) {
         int cnt = 0;
         Node temp = head;
 
@@ -52,7 +52,7 @@ public class LinkedList {
         return cnt;
     }
 
-    public static boolean checkIfPresent(Node head, int val) {
+    public boolean checkIfPresent(Node head, int val) {
         Node temp = head;
         while (temp != null) {
             if (temp.data == val)
@@ -63,14 +63,14 @@ public class LinkedList {
         return false;
     }
 
-    public static Node removesHead(Node head) {
+    public Node removesHead(Node head) {
         if (head == null)
             return head;
         head = head.next;
         return head;
     }
 
-    public static Node removesTail(Node head) {
+    public Node removesTail(Node head) {
         if (head == null || head.next == null) {
             return head;
         }
@@ -83,7 +83,7 @@ public class LinkedList {
         return head;
     }
 
-    public static Node removeK(Node head, int k) {
+    public Node removeK(Node head, int k) {
         if (head == null)
             return head;
 
@@ -108,7 +108,7 @@ public class LinkedList {
         return head;
     }
 
-    public static Node removeElement(Node head, int el) {
+    public Node removeElement(Node head, int el) {
         if (head == null)
             return head;
 
@@ -131,13 +131,13 @@ public class LinkedList {
         return head;
     }
 
-    public static Node insertHead(Node head, int val) {
+    public Node insertHead(Node head, int val) {
         Node temp = new Node(val);
         temp.next = head;
         return temp;
     }
 
-    public static Node insertTail(Node head, int val) {
+    public Node insertTail(Node head, int val) {
         if (head == null) {
             return new Node(val);
         }
@@ -153,7 +153,7 @@ public class LinkedList {
         return head;
     }
 
-    public static Node insertPosition(Node head, int el, int k) {
+    public Node insertPosition(Node head, int el, int k) {
 
         if (head == null) {
             if (k == 1) {
@@ -187,7 +187,7 @@ public class LinkedList {
         return head;
     }
 
-    public static Node insertBeforeValue(Node head, int el, int val) {
+    public Node insertBeforeValue(Node head, int el, int val) {
 
         if (head == null) {
             return null;
