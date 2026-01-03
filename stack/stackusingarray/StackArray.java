@@ -40,4 +40,17 @@ public class StackArray {
     public int size() {
         return top + 1;
     }
+
+    public void printStack() {
+        if (top == -1) {
+            System.out.println("Stack is Empty");
+            return;
+        }
+
+        for (int i = top; i >= 0; i--) {
+            System.out.print(stack[i] + " ");
+        }
+
+        System.out.println();
+    }
 }

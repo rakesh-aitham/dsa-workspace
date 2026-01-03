@@ -8,6 +8,8 @@ public class QueueArrayTest {
         queue.push(20);
         queue.push(30);
 
+        queue.printQueue();
+
         System.out.println("Front element: " + queue.peek());
 
         System.out.println("Removed element: " + queue.pop());

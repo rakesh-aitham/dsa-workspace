@@ -60,4 +60,19 @@ public class QueueArray {
     public boolean isEmpty() {
         return currSize == 0;
     }
+
+    public void printQueue() {
+        if (currSize == 0) {
+            System.out.println("Queue is Empty");
+            return;
+        }
+
+        int index = front;
+        for (int i = 0; i < currSize; i++) {
+            System.out.print(queue[index] + " ");
+            index = (index + 1) % capacity;
+        }
+
+        System.out.println();
+    }
 }

@@ -56,3 +56,11 @@ To check if the stack is empty:
 ### 7. Size Operation (`size()`)
 To get the current size of the stack:
 - Return `top + 1`.
+
+### 8. Print Stack Operation (`printStack()`)
+To print all elements of the stack:
+- Check if the stack is empty.
+- If the stack is empty, display a message indicating that the stack is empty.
+- If the stack is not empty:
+  - Traverse the array from the `top` index to `0`.
+  - Print each element.

@@ -66,5 +66,17 @@ Used to view the front element without removing it.
 Used to check whether the queue is empty.
 
 **Logic:**
-```text
-size == 0
+`size == 0`
+
+---
+
+### 7. Print Queue Operation (`printQueue()`)
+Used to print all elements of the queue.
+
+**Steps:**
+1. Check if the queue is empty.
+   - If empty, display a message.
+2. If not empty:
+   - Start from the `front` index.
+   - Traverse `size` elements using circular indexing.
+   - Print each element.

@@ -7,6 +7,7 @@ public class StackArrayTest {
         stack.push(3);
         stack.push(5);
         stack.push(2);
+        stack.push(6);
 
         System.out.println("Top element: " + stack.top());
 
@@ -16,5 +17,7 @@ public class StackArrayTest {
         System.out.println("Current stack size: " + stack.size());
 
         System.out.println("Is stack empty? " + stack.isEmpty());
+
+        stack.printStack();
     }
 }
