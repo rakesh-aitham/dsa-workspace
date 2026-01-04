@@ -3,6 +3,10 @@
 Prefix expressions place operators **before** their operands.  
 To convert a prefix expression to infix, we use a **stack** to rebuild the expression step by step while preserving the correct order of operands.
 
+| Prefix   | Infix      |
+| -------  | ---------- |
+| *+pq-mn  | (p+q)*(m-n)|
+
 ## Step-by-Step Approach
 
 1. **Initialize an empty stack** of strings.
