@@ -19,7 +19,7 @@ public class BinaryTreeTest {
         System.out.println("\nPostorder traversal:");
         tree.postorder(tree.root);
 
-        System.out.print("\nIs 20 found in tree? " + tree.search(40));
+        System.out.print("\nIs 30 found in tree? " + tree.search(30));
 
         tree.delete(20);
         System.out.println("\nTree after delete:");
