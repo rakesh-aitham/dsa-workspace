@@ -9,8 +9,6 @@ This program demonstrates **two ways** to find the height of a binary tree:
 
 ---
 
-## 📘 Definition
-
 The height of a binary tree is defined as:
 
 ```text
