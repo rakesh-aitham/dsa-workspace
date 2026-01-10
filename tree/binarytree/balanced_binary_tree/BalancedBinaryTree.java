@@ -1,4 +1,4 @@
-package tree.binarytree;
+package tree.binarytree.balanced_binary_tree;
 
 public class BalancedBinaryTree {
     static class TreeNode {
